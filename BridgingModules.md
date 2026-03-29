@@ -17,41 +17,41 @@ Murdoch Student ID : 36060222
 
 ## Session 1a - Basic command line navigation and utilities.
 - `pwd` - prints current working directorys
-  * helps to show output of the current path
-  * Exmaple : `/home/ubuntu`
+  - helps to show output of the current path
+  - Exmaple : `/home/ubuntu`
 
 - `Is` - list files and directory 
-  * Shows all current path directory content
-  * Examples:
-  * `ls` -> to show basic lsiting
-  * `ls -a` -> show all entires including hidden files
-  * `ls -l` -> used a long list format showing all detailed information
-  * Writting in `ls -al` allows to show all hidden files with their detailed information
+  - Shows all current path directory content
+  - Examples:
+    - `ls` -> to show basic lsiting
+    - `ls -a` -> show all entires including hidden files
+    - `ls -l` -> used a long list format showing all detailed information
+  - Writting in `ls -al` allows to show all hidden files with their detailed information
 
 - `cd` - Changes directory
-  * Goes to a specific Directory
-  * Examples:
-  * `cd Documents` -> goes to Documents directory
-  * `cd ..` -> return to prev directory
-  * `cd ~` -> return to home directory (e.g `/home/ubuntu`)
+  - Goes to a specific Directory
+  - Examples:
+    - `cd Documents` -> goes to Documents directory
+    - `cd ..` -> return to prev directory
+    - `cd ~` -> return to home directory (e.g `/home/ubuntu`)
 
 - `mkdir` - Creates a new directory
-  * Examples:
-  * `mkdir dlr1` -> creates a new directory name dlr1
+  - Examples:
+    - `mkdir dlr1` -> creates a new directory name dlr1
  
 - `touch` - Create an empty file
-  * Examples
-  * `touch test` -> create test file(empty)
+  - Examples
+    - `touch test` -> create test file(empty)
     
 - `man` - shows manual
-  * Examples
-  * `man ls` -> shows manual of ls
-  * `man man` -> shows manual of manual
+  - Examples
+    - `man ls` -> shows manual of ls
+    - `man man` -> shows manual of manual
     
--  `mv` - move a file or directory
-  * Examples:
-  * `mv test dlr1` -> move test file into dlr1
-  * `mv dlr1/test /home/ubuntu` -> move test file from dlr1 to /home/ubuntu
+- `mv` - move a file or directory
+  - Examples:
+    - `mv test dlr1` -> move test file into dlr1
+    - `mv dlr1/test /home/ubuntu` -> move test file from dlr1 to /home/ubuntu
 
 ## Session 1b: Exploring Linux ##
 
