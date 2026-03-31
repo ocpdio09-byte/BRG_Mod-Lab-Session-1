@@ -55,10 +55,52 @@ Murdoch Student ID : 36060222
       
 - `/` - root directory also known as base of the file
   - Basically to include it infront of a directory and use cd to access it.
-   
+
+- `ping` - Check connection
+  - `ping www.google.com` - continuously check connection with google
+
+- `echo` - display text
+  -`echo "Hello World" > text.txt` - pipe text "Hello World" into text directory
+  
 ## Session 1b: Exploring Linux ##
 # Session 1b : Linux Services
-- `sudo
+- `systemctl list-units --type=service` - List active running services
+  -Display all Current running services
+- `systemctl list-units --type=service --all` - List All services
+  -shows all services including inactive and failed
+- `sudo apt install openssh-server` - installing of SSH server to listen
+- `sudo systemctl start ssh` - Manually Start SSH services
+- `sydo systemctl stop SSH` - Manually Stop SSH services
+- `sudo systemctl status ssh` - show SSH service status
+  - Shows specifically whether it is
+  - active (Running as normal)
+  - inactive (Dead)
+  - failed (Encountered an error) 
+- `systemctl list-units --type=service | grep ssh` - Pick a specific service
+- `sudo systemctl enable SSH` - Starts SSH services automatically on boot
+- `systemctl list-unit-files --type=service` - shows all enabled services
+
+# Session 1b : Linux Searching Filesystems
+- Creating files for searching.
+  - `mkdir lab1b` -> Creates a diretory
+  - `touch file.txt file2.txt notes.log` -> creates 3 empty files for future uses.
+  - `echo "Hello World" > file1.txt` -> pipe text into .txt file
+  - `echo "This is Lab 1 B" > file2.txt` -> pipe text into .txt file
+  - `echo "Error" > notes.log` -> pipe text into .log file to show error later.
+-`find [path] -name "filename` -> find function to find a path of A specific file
+  -`. -name "file.txt"` -> shows file1.txt path
+  -`. -name "*.txt"` -> shows all .txt file path
+  -`. -type d` -> shows directories
+-`grep` -> search inside the files
+  -`grep "Lab" file2.txt` -> prints line and highlight the search text inside the file
+  -`grep -i "LAB" file2.txt` -> same as previopus byt case insensitive search
+  -`grep "Hello *` -> case sensitive search shows file name and highkighted text inside
+  -`grep -r "Error"` -> perform a recursive search through all files and display case sensitive
+-Combitionation uses of grep and find
+  -`find . -name "*.txt" -exec grep "Lab" {} \;`
+    -Searches all the txt file and execlude the file that contains the word Lab.
+
+# Session 1b : Permission
 ---
 
 ## Session 2 ##
