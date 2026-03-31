@@ -1,7 +1,7 @@
-# Birdging Modules Labs
+# Bridging Modules Labs
 ## Student Information ## 
 Student Name : LEE WEI HANG\
-Kalpan Student ID : CT0381772\
+Kaplan Student ID : CT0381772\
 Murdoch Student ID : 36060222
 
 ---
@@ -20,7 +20,7 @@ Murdoch Student ID : 36060222
   - helps to show output of the current path
   - Exmaple : `/home/ubuntu`
 
-- `Is` - list files and directory 
+- `ls` - list files and directory 
   - Shows all current path directory content
   - Examples:
     - `ls` -> to show basic lsiting
@@ -28,7 +28,7 @@ Murdoch Student ID : 36060222
     - `ls -l` -> used a long list format showing all detailed information
   - Writting in `ls -al` allows to show all hidden files with their detailed information
 
-- `cd` - Changes directory
+- `cd` - Changes directory or Directory Navigation
   - Goes to a specific Directory
   - Examples:
     - `cd Documents` -> goes to Documents directory
@@ -52,7 +52,10 @@ Murdoch Student ID : 36060222
   - Examples:
     - `mv test dlr1` -> move test file into dlr1
     - `mv dlr1/test /home/ubuntu` -> move test file from dlr1 to /home/ubuntu
-
+      
+- `/` - root directory also known as base of the file
+  - Basically to include it infront of a directory and use cd to access it.
+   
 ## Session 1b: Exploring Linux ##
 
 ---
