@@ -189,7 +189,7 @@ fi
 bash if.sh
 ```
 
-- for loop
+- For loop
 ```
 #Create the script (for loop)
 nano for.sh
@@ -203,7 +203,7 @@ done
 bash if.sh
 ```
 
-- while loop
+- While loop
 ```
 #Create the script (while loop)
 nano while.sh
@@ -236,7 +236,7 @@ crontab -e
 cd ~
 cat cron.txt
 ```
--
+
 ----------
 
 # Session 3
