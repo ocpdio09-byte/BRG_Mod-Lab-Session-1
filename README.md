@@ -100,6 +100,46 @@ Murdoch Student ID : 36060222
     - Searches all the txt file and execlude the file that contains the word Lab.
 
 ## Session 1b : Permission
+Understanding permission
+- 3 types of group
+  - User (owber)
+  - Group
+  - Others 
+- 3 types of permision
+  - r = read
+  - w = write
+  - x = execute
+Combining everything together gets\
+rwx-rwx-rwx\
+ U   G   O\
+U - User\
+G - Group\
+O - other\
+
+- `touch TestPrem/txt` Creating a dummy file
+- `ls -l` -> View permission 
+- Change Permission
+  - Numeric System!
+    - r = 4 , w = 2, x = 1  
+      - 7 -> rwx (read, write, execute)
+      - 6 -> -rw (read, write)
+      - 5 -> r-x (read, execute)
+      - 4 -> r-- (read)
+      - 0 -> --- (No permission)
+- `chmod 777 TestPrem.txt`
+  - give full permission to all user to read write and execute the file
+- `chmod 444 TestPrem.txt`
+  - make file read-omly for all user
+- `chmod 755 TestPrem.txt`
+  - give gull permission to user BUT read and execute only for group AND OTHER
+- `chmod 740 TestPrem.txt`
+  - make file read-omly for all user
+- Symbolic mode -> allows adding or removing premission specifically.
+  - `chmod u+x TestPrem.txt` 
+  - `chmod g-w TestPrem.txt`
+- Change Ownership!
+  - `sudo chown user:group TestPrem.txt`
+  - `sudo chown root:root TestPrem.txt`
 ---
 
 ## Session 2 ##
