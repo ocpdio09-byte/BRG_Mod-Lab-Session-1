@@ -143,7 +143,18 @@ O - other\
 
 # Session 2 
 ## Session 2a : Total Cost of Ownership (TCO)
-
+- TCO - Total Cost of Ownership
+  - Comporison of 2 different types of printer for 5 years
+    - Printer A -> BROTHER DCP-L2640DW Laser Printer
+    - Printer B -> Epson EcoTank L4360
+- Assumptions
+  - Printer prints 750 pages/week
+  - Power on 40 hrs power/week
+  - Calculated for 5-year period
+  - Electric consumtion SGD $0.29/kWh (From SP Group)
+- InkJet shows a better result for the TCO
+- Tables and calculation are made via ~ Microsoft Excel
+  
 ## Session 2b : Cloud Services
 - Succesfully deployed VM using Azure for Student
   - VM Name : Lab2-Ubuntu
