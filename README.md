@@ -314,6 +314,19 @@ cat cron.txt
 
 # Session 3
 ## Session 3a : DNS & Certificates
+- registered a free domain for ~ duckDNS(www.duckdns.org)
+- Created port 80(http) and port 443(https)
+- Connected SSH into azure VM `ssh azureuser@4.194.16.118`
+- install apache `sudo apt update` , `sudo apt install apache2 -y`
+- start apache `sudo systemtcl start apache 2`
+- Change current ip of `http://bridgingisea.duckdns.org/` to `4.194.16.118`
+- verified DNS by using ping `bridgingisea.duckdns.org`
+- Check and confirm working apache page at `http://bridgingisea.duckdns.org/`
+
+
+- Installed SSL Certificatte
+- `sudo certbot --apache`
+- HTTPS enabled `https://bridgingisea.duckdns.org/`
 
 ## Session 3b : Server Automation
 
