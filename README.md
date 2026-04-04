@@ -395,11 +395,12 @@ sudo nano /etc/crontab
   ```
   sudo apt install figlet neofetch -y
   nano ~/.bashrc
-    figlet
+    figlet"Welcome"
     neofetch
   source ~/.bashrc
   ```
 ![3bScript](3b6.png)
+![3bScript](3b7.png)
 
 ----------
 
