@@ -115,6 +115,17 @@ Murdoch Student ID : 36060222
   - `find . -name "*.txt" -exec grep "Lab" {} \;`
     - Searches all the txt file and execlude the file that contains the word Lab.
 
+![1bsearch](1bs.png)
+![1bsearch](2bs.png)
+![1bsearch](3bs.png)
+![1bsearch](4bs.png)
+![1bsearch](5bs.png)
+![1bsearch](6bs.png)
+![1bsearch](7bs.png)
+![1bsearch](8bs.png)
+![1bsearch](9bs.png)
+![1bsearch](10bs.png)
+
 ## Session 1b : Permission
 Understanding permission
 - 3 types of group
