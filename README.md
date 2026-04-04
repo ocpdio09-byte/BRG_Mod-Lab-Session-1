@@ -340,7 +340,71 @@ cat cron.txt
 ![3aDNS](3a10.png)
 
 ## Session 3b : Server Automation
+- Creating test folderm files with some text.
+  ```
+  mkdir -p /home/azureuser/Documents/lab3b
+  echo "File 1:" > /home/azureuser/Documents/lab3b/file1.txt
+  echo "File 2:" > /home/azureuser/Documents/lab3b/file2.txt
+  mkdir -p /home/azureuser/Documents/lab3b/subfolder
+  echo "Nested file" > /home/azureuser/Documents/lab3b/subfolder/file3.txt
+  
+  #Create a backup folder
+  mkdir -p /home/azureuser/backup
+  ```
+![3bScript](3b1.png)
+- writing a testscript to perform backup on Document folder
+  ```
+  #!/bin/bash
+  
+  now=$(date +"%d_%m_%y")
+  
+  mkdir -p /home/azureuser/backup
+  cp -R /home/azureuser/Documents/* /home/azureuser/backup/
+  
+  cd /home/azureuser || exit
+  zip -r "${now}.zip" /home/azureuser/backup/*
+  
+  cp "${now}.zip" /home/azureuser/
+  echo "Backup completed: ${now}.zip"
+  ```
+- installed zip `sudo apt install zip -y`
+- run `bash testcript`
+![3bScript](3b2.png)
+
+- Making it executable provide permission ~ `chmod 777 testcript`
+![3bScript](3b3.png)
+
+- move testsrcipt to `/usr/bin/testscript`
+~ Allows to run system-wide
+![3bScript](3b4.png)
+
+- Scheduling with cron
+```
+# runs every minute
+sudo nano /etc/crontab
+* * * * * azureuser /usr/bin/transcript
+```
+- `0` = minute 0
+- `*` = every hour
+- user = `azureuser`
+- command = `/usr/bin/transcript`
+![3bScript](3b4.png)
+
+- [Challenge]
+  - Each Login will show figlet welcome and neofetch
+  ```
+  sudo apt install figlet neofetch -y
+  nano ~/.bashrc
+    figlet "Lab2=Ubuntu"
+    neofetch
+  source ~/.bashrc
+  ```
+![3bScript](3b6.png)
 
 ----------
 
 # Sesssion 4
+
+
+
+
