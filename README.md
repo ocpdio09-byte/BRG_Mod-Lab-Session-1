@@ -369,6 +369,7 @@ cat cron.txt
   ```
 - installed zip `sudo apt install zip -y`
 - run `bash testcript`
+
 ![3bScript](3b2.png)
 
 - Making it executable provide permission ~ `chmod 777 testcript`
@@ -388,6 +389,7 @@ sudo nano /etc/crontab
 - `*` = every hour
 - user = `azureuser`
 - command = `/usr/bin/transcript`
+
 ![3bScript](3b4.png)
 
 - [Challenge]
