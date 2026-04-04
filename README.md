@@ -439,7 +439,6 @@ VALUES ('Micky', 'A'), ('John', 'B');
 ![4AdditionalS](4A1.png)
 ![4AdditionalS](4A2.png)
 ![4AdditionalS](4A3.png)
-![4AdditionalS](4A4.png)
 ![4AdditionalS](4A5.png)
 ![4AdditionalS](4A6.png)
 
