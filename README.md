@@ -74,13 +74,26 @@ Murdoch Student ID : 36060222
 - Install SSH and Nmap `sudo apt install openssh-server nmap -y`
 - Get IP address `ip a` ~ `10.0.2.12`
 - Scan ports with nmap `nmap 124.0.0.1`
-- Edited the webpage ~ `sudp nano index.html`
+- Edited the webpage ~ `sudo nano index.html`
 - Enabled firewall allowing http ports `80` ~ `sudo ufw enable`,`sudo ufw allow 80`
 - Downloaded books from Project Gutenberg using `wget https://www.gutenberg.org/files/1342/1342-0.txt`
 - Create a directory adn archieve files using tar `tar -cf Books.tar Books`
 - Compress to `bzip2 Books.tar` 
 - Decompress `bunzrip2 Books.tar.bz2`.`tar -xvf Books.tar` 
 
+![1a](4.png)
+![1a](5.png)
+![1a](6.png)
+![1a](7.png)
+![1a](8.png)
+![1a](9.png)
+![1a](10.png)
+![1a](11.png)
+![1a](12.png)
+![1a](13.png)
+![1a](14.png)
+![1a](15.png)
+![1a](16.png)
 
 ## Session 1b : Linux Searching Filesystems
 - Creating files for searching.
