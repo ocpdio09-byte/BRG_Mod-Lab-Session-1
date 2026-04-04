@@ -61,7 +61,10 @@ Murdoch Student ID : 36060222
 
 - `echo` - display text
   - `echo "Hello World" > text.txt` - pipe text "Hello World" into text directory
-  
+
+![1a](1.png)
+![1a](2.png)
+![1a](3.png)
 ## Session 1b : Linux Services
 - `systemctl list-units --type=service` - List active running services
   -Display all Current running services
@@ -130,7 +133,7 @@ O - other\
   - `chmod 444 TestPrem.txt` -> make file read-omly for all user
   - `chmod 755 TestPrem.txt` -> give gull permission to user BUT read and execute only for group AND OTHER
   - `chmod 740 TestPrem.txt` -> make file read-omly for all user
-  - 
+  
 - Symbolic mode -> allows adding or removing premission specifically.
   - `chmod u+x TestPrem.txt` 
   - `chmod g-w TestPrem.txt`
