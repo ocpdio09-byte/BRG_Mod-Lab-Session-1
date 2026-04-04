@@ -67,22 +67,20 @@ Murdoch Student ID : 36060222
 ![1a](1.png)
 ![1a](2.png)
 ![1a](3.png)
+
 ## Session 1b : Linux Services
-- `systemctl list-units --type=service` - List active running services
-  -Display all Current running services
-- `systemctl list-units --type=service --all` - List All services
-  -shows all services including inactive and failed
-- `sudo apt install openssh-server` - installing of SSH server to listen
-- `sudo systemctl start ssh` - Manually Start SSH services
-- `sydo systemctl stop SSH` - Manually Stop SSH services
-- `sudo systemctl status ssh` - show SSH service status
-  - Shows specifically whether it is
-  - active (Running as normal)
-  - inactive (Dead)
-  - failed (Encountered an error) 
-- `systemctl list-units --type=service | grep ssh` - Pick a specific service
-- `sudo systemctl enable SSH` - Starts SSH services automatically on boot
-- `systemctl list-unit-files --type=service` - shows all enabled services
+- Install apache and start it `sudo apt update`,`sudo apt install apache2 -y`,`sudo systemctl start apache2`
+- Tested on web `http://127.0.0.1`
+- Install SSH and Nmap `sudo apt install openssh-server nmap -y`
+- Get IP address `ip a` ~ `10.0.2.12`
+- Scan ports with nmap `nmap 124.0.0.1`
+- Edited the webpage ~ `sudp nano index.html`
+- Enabled firewall allowing http ports `80` ~ `sudo ufw enable`,`sudo ufw allow 80`
+- Downloaded books from Project Gutenberg using `wget https://www.gutenberg.org/files/1342/1342-0.txt`
+- Create a directory adn archieve files using tar `tar -cf Books.tar Books`
+- Compress to `bzip2 Books.tar` 
+- Decompress `bunzrip2 Books.tar.bz2`.`tar -xvf Books.tar` 
+
 
 ## Session 1b : Linux Searching Filesystems
 - Creating files for searching.
