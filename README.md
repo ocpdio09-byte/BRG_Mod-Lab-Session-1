@@ -150,8 +150,8 @@ O - Other
 - Add user to group -> `sudo usermod -aG aswesomegroup bob`
 - Remove user from group -> `sudo deluser bob awesomegroup`
 - Verify -> `groups [name]`
-- View users -> `less /etc/passwd`
-- View Group -> `less /etc/passwd`
+- View users password details-> `less /etc/passwd`
+- View users Group details -> `less /etc/passwd`
 - Renoving files
   - Remove testfile`rm testdir.txt`
   - Perform as recurtion to delete all file inside the directory and remove the directory
