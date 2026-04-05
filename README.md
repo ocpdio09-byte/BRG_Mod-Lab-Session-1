@@ -143,8 +143,20 @@ U - User\
 G - Group\
 O - Other
 
-- `touch TestPrem/txt` Creating a dummy file
-- `ls -l` -> View permission 
+- `touch TestPrem/txt`,`mkdir testdir`,`touch testfir.txt` Creating a dummy file and folder
+- `ls -l` -> View permission
+- `sudo groupadd awesomegroup` -> Creating a group
+- Add user "bob","alice" - > `sudo adduser [name]`
+- Add user to group -> `sudo usermod -aG aswesomegroup bob`
+- Remove user from group -> `sudo deluser bob awesomegroup`
+- Verify -> `groups [name]`
+- View users -> `less /etc/passwd`
+- View Group -> `less /etc/passwd`
+- Renoving files
+  - Remove testfile`rm testdir.txt`
+  - Perform as recurtion to delete all file inside the directory and remove the directory
+    - `rm -r testdir`
+  
 - Change Permission
   - Numeric System!
     - r = 4 , w = 2, x = 1  
@@ -165,15 +177,26 @@ O - Other
   - `chmod g-w TestPrem.txt`
 
 - Change Ownership!
-  - `sudo chown ubuntu:ubuntu TestPrem.txt` -> give premision to user ubuntu
-  - `sudo chown $USER:$USER TestPrem.txt` -> automatically check and uses current username
+  - `sudo chown -R alice testfolder` -> do a recursive and give user ownership to alice for all files inside testfolder
+  - `sudo chgrp =R alice testfolder` -> do a recursive and give group ownership to alice for all files inside testfolder
 
+- Change User
+  - `sudo su -alice` -> change to alice
+   
 ![1bpermission](1bp.png)
 ![1bpermission](2bp.png)
 ![1bpermission](3bp.png)
 ![1bpermission](4bp.png)
 ![1bpermission](5bp.png)
 ![1bpermission](6bp.png)
+![1bpermission](7bp.png)
+![1bpermission](8bp.png)
+![1bpermission](9bp.png)
+![1bpermission](10bp.png)
+![1bpermission](11bp.png)
+![1bpermission](12bp.png)
+![1bpermission](13bp.png)
+![1bpermission](14bp.png)
 
 ----------
 
