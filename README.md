@@ -226,7 +226,7 @@ O - Other
   - OS      : Linux
   - Size    : Standard D2s v3 (2 vcpus, 8 GiB memory)
 - Connected to windows PowerShell terminal via : `SSH Command`
-- Updates the System with `sudo apt update` & `sudo apt update -y`
+- Updates the System with `sudo apt update` & `sudo apt upgrade -y`
 ![Lab2b](2b1.png)
 ![Lab2b](2b2.png)
 
